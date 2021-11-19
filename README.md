@@ -1,3 +1,5 @@
+Nota: El diagrama Entidad/Relación se encuentra dentro de la carpeta "Diagrama"
+
 La empresa Transportes ACME S.A. necesita crear una aplicación en Internet para
 registrar los vehículos, conductores y propietarios utilizados durante sus operaciones
 diarias. La misma aplicación debe permitir a la empresa consultar la información de los
