@@ -12,7 +12,7 @@
             @error('description')
             <h6 class="alert alert-danger"> {{ $message }} </h6>
             @enderror
-
+            <h2 style="text-align: center;" >Registro de Roles</h2>
             <div class="mb-3">
                 <!-- <label for="description" class="form-label">Rol</label> -->
                 <input type="text" class="form-control" name="description" >

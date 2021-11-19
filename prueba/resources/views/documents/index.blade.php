@@ -12,7 +12,7 @@
             @error('description')
                 <h6 class="alert alert-danger"> {{ $message }} </h6>
             @enderror
-
+            <h2 style="text-align: center;" >Registro de Tipo de Documentos</h2>
             <div class="mb-3">
                 <input type="text" class="form-control" name="description" >
                 <div id="descHelp" class="form-text">Ingresa el nuevo tipo de documento.</div>

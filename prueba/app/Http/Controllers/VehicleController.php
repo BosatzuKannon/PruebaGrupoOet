@@ -22,7 +22,7 @@ class VehicleController extends Controller
 
     public function index(){
         $vehicle = Vehicle_type::all();
-        return view('vehicles.index', ['vehicle' => $vehicle]);
+        return view('vehicle.index', ['vehicle' => $vehicle]);
     }
 
     public function destroy($id){

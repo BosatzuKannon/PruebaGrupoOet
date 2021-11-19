@@ -11,23 +11,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- <ul class="nav nav-tabs">        
-        <li class="nav-item">
-            <a class="nav-link" href="#">Inicio</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Roles</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Vehiculos</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Documentos</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Marcas</a>
-        </li> 
-    </ul> -->
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
@@ -38,14 +21,14 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    <a class="nav-link active" aria-current="page" href="{{ route('index') }}">Inicio</a>
                 </li>                
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Personas
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Registrar Personas</a></li>
+                        <li><a class="dropdown-item" href="{{ route('people') }}">Registrar Personas</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="{{ route('role') }}">Registrar roles</a></li>
                         <li><a class="dropdown-item" href="{{ route('document') }}">Registrar tipos de documentos</a></li>
@@ -56,7 +39,7 @@
                         Vehiculos
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Registrar Vehiculos</a></li>
+                        <li><a class="dropdown-item" href="{{ route('vehicles') }}">Registrar Vehiculos</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="{{ route('brand') }}">Registrar marcas</a></li>
                         <li><a class="dropdown-item" href="{{ route('vehicle') }}">Tipo de vehiculos</a></li>

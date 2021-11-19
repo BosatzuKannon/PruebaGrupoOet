@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container w-30 border p-4 mt-4">
-        <form action="{{ route('brand') }}" method="POST">
+        <form action="{{ route('vehicle') }}" method="POST">
             @csrf
 
             @if(session('success'))
@@ -12,12 +12,12 @@
             @error('description')
                 <h6 class="alert alert-danger"> {{ $message }} </h6>
             @enderror
-            <h2 style="text-align: center;" >Registro de Marcas</h2>
+            <h2 style="text-align: center;" >Registro de Tipos de Vehiculos</h2>
             <div class="mb-3">
                 <input type="text" class="form-control" name="description" >
-                <div id="descHelp" class="form-text">Ingresa marca de vehiculo.</div>
+                <div id="descHelp" class="form-text">Ingresa el nuevo tipo de vehiculo.</div>
             </div>            
-            <button type="submit" class="btn btn-primary">Crear Marca de Vehiculo</button>
+            <button type="submit" class="btn btn-primary">Crear Tipo de Vehiculo</button>
         </form>
 
         <div class="mt-4">
@@ -30,12 +30,12 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach ( $brand as $bran)
+                @foreach ( $vehicle as $type)
                 <tr>
-                    <th scope="row"> {{ $bran->id }} </th>
-                    <td> {{ $bran->description }} </td>
+                    <th scope="row"> {{ $type->id }} </th>
+                    <td> {{ $type->description }} </td>
                     <td>
-                        <form action="{{ route('brand-destroy', [$bran->id]) }}" method="POST">
+                        <form action="{{ route('vehicle-destroy', [$type->id]) }}" method="POST">
                             @method('DELETE')
                             @csrf
                             <button class="btn btn-danger btn-sm">Eliminar</button>
